@@ -1,0 +1,19 @@
+.navbar {
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  color: #286161;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #008181;
+  text-decoration: none;
+}
+
+.navbar-brand img {
+  height: 60px;
+}
