@@ -1,0 +1,243 @@
+/* Contact page — light clinic layout similar to reference */
+
+.contact-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: #f4f5f7;
+  text-align: left;
+}
+
+.contact-page__container {
+  width: 100%;
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 3vw, 1.75rem);
+  padding-block: clamp(2rem, 4vw, 3rem) clamp(2.5rem, 5vw, 4rem);
+}
+
+.contact-page__title {
+  margin: 0 0 2.5rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #1e293b;
+  text-align: center;
+}
+
+.contact-page__panel {
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.contact-page__panel--top {
+  padding: clamp(1rem, 2.5vw, 1.35rem);
+  margin-bottom: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.contact-page__panel--bottom {
+  height: 100%;
+  padding: clamp(1.25rem, 3vw, 1.5rem);
+}
+
+.contact-page__map-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #e2e8f0;
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+  aspect-ratio: 4 / 3;
+  min-height: 220px;
+}
+
+.contact-page__map-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.contact-page__location-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  background: #cbd5e1;
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+}
+
+.contact-page__location-heading {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.contact-page__address {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #475569;
+}
+
+.contact-page__directions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0d9488;
+  text-decoration: none;
+}
+
+.contact-page__directions:hover {
+  text-decoration: underline;
+}
+
+.contact-page__hours-card {
+  height: 100%;
+  padding: 1.25rem 1rem;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+}
+
+.contact-page__hours-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.contact-page__hours-title svg {
+  flex-shrink: 0;
+  color: #0ea5e9;
+}
+
+.contact-page__hours-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-page__hours-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.45rem 0.65rem;
+  margin-bottom: 2px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #334155;
+}
+
+.contact-page__hours-row--today {
+  position: relative;
+  background: rgba(14, 165, 233, 0.12);
+  font-weight: 600;
+}
+
+.contact-page__hours-row--today::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 70%;
+  border-radius: 2px;
+  background: #0ea5e9;
+}
+
+.contact-page__hours-closed {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.contact-page__booking-heading {
+  margin: 0 0 1rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.contact-page__booking-text {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #475569;
+}
+
+.contact-page__booking-text:last-child {
+  margin-bottom: 0;
+}
+
+.contact-page__whatsapp-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.75rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.contact-page__whatsapp-title svg {
+  flex-shrink: 0;
+  color: #25d366;
+}
+
+.contact-page__whatsapp-text {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #475569;
+}
+
+.contact-page__whatsapp-number {
+  margin: 0 0 1.1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #0f172a;
+}
+
+.contact-page__whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  background: #25d366;
+  border-radius: 8px;
+  border: 1px solid #20bd5a;
+  transition: background-color 0.15s ease, filter 0.15s ease;
+}
+
+.contact-page__whatsapp-btn:hover {
+  color: #fff;
+  filter: brightness(0.95);
+}
+
+
+@media (max-width: 767.98px) {
+  .contact-page__title {
+    margin-bottom: 1.75rem;
+  }
+}

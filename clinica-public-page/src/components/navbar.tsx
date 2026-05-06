@@ -9,13 +9,13 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#home"><img src={logo} alt="logo" /></Navbar.Brand>
+        <Navbar.Brand href="/"><img src={logo} alt="logo" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-lg-auto">
-            <Nav.Link href="#about">Nosotros</Nav.Link>
-            <Nav.Link href="#services">Servicios</Nav.Link>
-            <Nav.Link href="#contact">Contacto</Nav.Link>
+            <Nav.Link href="/nosotros">Nosotros</Nav.Link>
+            <Nav.Link href="/servicios">Servicios</Nav.Link>
+            <Nav.Link href="/contacto">Contacto</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

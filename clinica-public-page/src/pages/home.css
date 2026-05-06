@@ -1,0 +1,121 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  text-align: left;
+}
+
+.home-hero {
+  --home-hero-image: url('https://images.unsplash.com/photo-1606811971618-4486f14f3b99?auto=format&fit=crop&w=2000&q=80');
+
+  position: relative;
+  isolation: isolate;
+  min-height: min(85vh, 56rem);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: #94a3b8;
+  background-image: var(--home-hero-image);
+  background-size: cover;
+  background-position: center right;
+}
+
+.home-hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(255, 255, 255, 0.92) 22%,
+    rgba(255, 255, 255, 0.55) 48%,
+    rgba(255, 255, 255, 0.12) 68%,
+    transparent 85%
+  );
+}
+
+.home-hero__inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1.25rem, 4vw, 3rem);
+}
+
+.home-hero__title {
+  margin: 0 0 0.75rem;
+  max-width: 16ch;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+.home-hero__tagline {
+  margin: 0 0 1.75rem;
+  max-width: 36ch;
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.5;
+  color: #334155;
+}
+
+.home-hero__cta {
+  display: inline-block;
+  padding: 0.65rem 1.35rem;
+  margin-bottom: 1rem;
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  color: #1e293b;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.home-hero__cta:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  color: #0f172a;
+}
+
+.home-hero__phone {
+  margin: 0;
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: #475569;
+}
+
+@media (max-width: 767.98px) {
+  .home-hero__overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.97) 0%,
+      rgba(255, 255, 255, 0.85) 42%,
+      rgba(255, 255, 255, 0.35) 72%,
+      transparent 100%
+    );
+  }
+
+  .home-hero__bg {
+    background-position: center;
+  }
+}
