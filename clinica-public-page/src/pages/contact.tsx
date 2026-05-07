@@ -1,5 +1,4 @@
 import { useMemo } from 'react'
-import SiteNavbar from '../components/navbar'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -59,7 +58,6 @@ export default function Contact() {
 
   return (
     <div className="contact-page">
-      <SiteNavbar />
       <main>
         <Container fluid className="contact-page__container">
           <h1 className="contact-page__title">Contáctenos</h1>

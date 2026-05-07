@@ -1,10 +1,8 @@
-import SiteNavbar from '../components/navbar'
 import './home.css'
 
 export default function Home() {
   return (
     <div className="home">
-      <SiteNavbar />
       <section className="home-hero" aria-label="Presentación">
         <div className="home-hero__bg" aria-hidden />
         <div className="home-hero__overlay" aria-hidden />
