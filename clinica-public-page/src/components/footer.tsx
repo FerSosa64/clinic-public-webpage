@@ -81,7 +81,7 @@ const Footer = () => {
               </a>
               <a
                 className="site-footer__social-link"
-                href="https://instagram.com/"
+                href="https://www.instagram.com/clinicadentalsosaflores2026?igsh=MTI5OXNnZnJjeXF6cA=="
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"

@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import './contact.css'
+import clinicImage from '../assets/imagen_de_clinica1.jpg'
 
 const MAP_EMBED_SRC =
   'https://maps.google.com/maps?width=600&height=400&hl=es&q=Cl%C3%ADnica%20Dental%20Sosa%20Flores%20San%20Pedro%20Sula+(Clinica%20Dental%20Sosa%20Flores)&t=&z=15&ie=UTF8&iwloc=B&output=embed'
@@ -77,7 +78,7 @@ export default function Contact() {
               <Col lg={4}>
                 <img
                   className="contact-page__location-img"
-                  src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80"
+                  src={clinicImage}
                   alt="Interior de clínica dental moderna"
                 />
                 <h2 className="contact-page__location-heading">Ubicación</h2>
