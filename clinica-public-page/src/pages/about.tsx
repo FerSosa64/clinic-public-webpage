@@ -1,12 +1,17 @@
+import VisitenosSection from '../components/VisitenosSection'
+
 export default function About() {
   return (
-    <div className="home">
-      <main className="flex-grow-1 p-4">
-        <h1 className="h3 mb-2">Acerca de </h1>
-        <p className="text-body-secondary mb-0">
-          Página de nosotros.
-        </p>
-      </main>
-    </div>
+    <>
+      <div className="home">
+        <main className="flex-grow-1 p-4">
+          <h1 className="h3 mb-2">Acerca de </h1>
+          <p className="text-body-secondary mb-0">
+            Página de nosotros.
+          </p>
+        </main>
+      </div>
+      <VisitenosSection />
+    </>
   )
 }

@@ -7,6 +7,7 @@ import {
   WHATSAPP_HREF,
   CLINIC_PHONE_TEL,
 } from '../data/clinicContact'
+import { SERVICE_CATEGORIES } from '../data/servicesContent'
 
 const OPENING_HOURS: { day: string; hours: string }[] = [
   { day: 'Lunes', hours: '8:00 – 17:00' },
@@ -128,15 +129,11 @@ const Footer = () => {
               Servicios
             </h2>
             <ul className="site-footer__links">
-              <li>
-                <Link to="/servicios">Odontología general</Link>
-              </li>
-              <li>
-                <Link to="/servicios">Estética dental</Link>
-              </li>
-              <li>
-                <Link to="/servicios">Ortodoncia</Link>
-              </li>
+              {SERVICE_CATEGORIES.map((cat) => (
+                <li key={cat.id}>
+                  <Link to={`/servicios#${cat.id}`}>{cat.name}</Link>
+                </li>
+              ))}
             </ul>
           </section>
 
@@ -146,7 +143,7 @@ const Footer = () => {
             </h2>
             <ul className="site-footer__links">
               <li>
-                <Link to="/">Inicio</Link>
+                <Link to="/" >Inicio</Link>
               </li>
               <li>
                 <Link to="/nosotros">Nosotros</Link>
