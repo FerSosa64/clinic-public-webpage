@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
 import './footer.css'
 import logo from '../assets/logo_title.png'
-
-const DIRECTIONS_URL =
-  'https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica+Dental+Sosa+Flores+San+Pedro+Sula'
-
-const WHATSAPP_HREF = 'https://wa.me/50496747159'
+import {
+  DIRECTIONS_URL,
+  WHATSAPP_DISPLAY,
+  WHATSAPP_HREF,
+  CLINIC_PHONE_TEL,
+} from '../data/clinicContact'
 
 const OPENING_HOURS: { day: string; hours: string }[] = [
   { day: 'Lunes', hours: '8:00 – 17:00' },
@@ -67,7 +68,7 @@ const Footer = () => {
               Honduras
             </address>
             <p className="site-footer__phone">
-              <a href="tel:+50496747159">+504 9674-7159</a>
+              <a href={CLINIC_PHONE_TEL}>{WHATSAPP_DISPLAY}</a>
             </p>
             <div className="site-footer__social" role="list">
               <a

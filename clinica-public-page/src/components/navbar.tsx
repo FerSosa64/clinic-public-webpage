@@ -7,7 +7,7 @@ import logo from '../assets/logo_title.png';
 
 function BasicExample() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" sticky="top" className="bg-body-tertiary site-navbar">
       <Container fluid>
         <Navbar.Brand href="/"><img src={logo} alt="logo" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

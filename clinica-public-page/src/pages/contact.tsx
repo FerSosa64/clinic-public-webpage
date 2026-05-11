@@ -4,28 +4,14 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import './contact.css'
 import clinicImage from '../assets/imagen_de_clinica1.jpg'
-
-const MAP_EMBED_SRC =
-  'https://maps.google.com/maps?width=600&height=400&hl=es&q=Cl%C3%ADnica%20Dental%20Sosa%20Flores%20San%20Pedro%20Sula+(Clinica%20Dental%20Sosa%20Flores)&t=&z=15&ie=UTF8&iwloc=B&output=embed'
-
-const DIRECTIONS_URL =
-  'https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica+Dental+Sosa+Flores+San+Pedro+Sula'
-
-const WHATSAPP_DIGITS = '50496747159'
-const WHATSAPP_DISPLAY = '+504 9674-7159'
-const WHATSAPP_HREF = `https://wa.me/${WHATSAPP_DIGITS}`
-
-type DayHours = { dayIndex: number; label: string; hours: string; closed?: boolean }
-
-const SCHEDULE: DayHours[] = [
-  { dayIndex: 0, label: 'Domingo', hours: 'Cerrado', closed: true },
-  { dayIndex: 1, label: 'Lunes', hours: '8:00 – 17:00' },
-  { dayIndex: 2, label: 'Martes', hours: '8:00 – 17:00'},
-  { dayIndex: 3, label: 'Miércoles', hours: '8:00 – 17:00' },
-  { dayIndex: 4, label: 'Jueves', hours: '8:00 – 17:00' },
-  { dayIndex: 5, label: 'Viernes', hours: '8:00 – 17:00' },
-  { dayIndex: 6, label: 'Sábado', hours: '8:00 – 12:00' },
-]
+import {
+  CLINIC_ADDRESS_LINES,
+  DIRECTIONS_URL,
+  MAP_EMBED_SRC,
+  SCHEDULE,
+  WHATSAPP_DISPLAY,
+  WHATSAPP_HREF,
+} from '../data/clinicContact'
 
 function ClockIcon() {
   return (
@@ -83,9 +69,12 @@ export default function Contact() {
                 />
                 <h2 className="contact-page__location-heading">Ubicación</h2>
                 <p className="contact-page__address">
-                  Clínica Dental Sosa Flores
-                  <br />
-                  San Pedro Sula, Cortés, Honduras
+                  {CLINIC_ADDRESS_LINES.map((line, i) => (
+                    <span key={line}>
+                      {i > 0 ? <br /> : null}
+                      {line}
+                    </span>
+                  ))}
                 </p>
                 <a
                   className="contact-page__directions"

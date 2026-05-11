@@ -1,7 +1,9 @@
-.navbar {
+.site-navbar.navbar {
+  z-index: 1030;
   background-color: #f8f9fa;
   font-family: 'Arial', sans-serif;
   font-size: 1.2rem;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.08);
 }
 
 .nav-link {
@@ -10,7 +12,7 @@
 }
 
 .nav-link:hover {
-  color: #2bcaf1;
+  color: #1a839e;
   text-decoration: none;
 }
 
