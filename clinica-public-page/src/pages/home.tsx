@@ -163,7 +163,7 @@ export default function Home() {
           </div>
 
           <a className="home-services__cta" href="/servicios">
-            VER TODOS LOS SERVICIOS
+            Ver todos los servicios
           </a>
         </div>
       </section>
