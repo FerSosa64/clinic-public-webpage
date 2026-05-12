@@ -74,7 +74,7 @@ const Footer = () => {
             <div className="site-footer__social" role="list">
               <a
                 className="site-footer__social-link"
-                href="https://facebook.com/"
+                href="https://www.facebook.com/clinicasosaflores.sosaflores?mibextid=rS40aB7S9Ucbxw6v"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
