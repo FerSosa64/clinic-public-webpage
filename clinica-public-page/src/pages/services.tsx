@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom'
 import './services.css'
 import servicesHeroImage from '../assets/imagen_de_clinica2.png'
 import VisitenosSection from '../components/VisitenosSection'
-import { CLINIC_PHONE_TEL, WHATSAPP_DISPLAY } from '../data/clinicContact'
 import { SERVICE_CATEGORIES } from '../data/servicesContent'
 
 export default function Services() {
